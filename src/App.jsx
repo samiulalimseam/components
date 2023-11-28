@@ -1,19 +1,25 @@
 
-import { Button, Flex, Textarea } from '@chakra-ui/react';
+import { Button, Flex, Box, Textarea } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import Stepper from './components/Stepper';
-import ImageSlider from './components/ImageSlider';
-
+import { SimpleGrid } from '@chakra-ui/react'
+import DnD from './components/DnD';
 function App() {
   const [reviewText, setreviewText] = useState('');
 
- 
+
   return (
     <>
-    
-    <Stepper />
-    
-    
+      <SimpleGrid my={'4'} mx={'auto'} columns={2} spacing={10}>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'} >
+          <h3>Custom Stepper component build using Chakra Ui</h3>
+          <Stepper />
+        </Box>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'} >
+          <h3>Drag and drop component using react</h3>
+          <DnD />
+        </Box>
+      </SimpleGrid>
     </>
   )
 }

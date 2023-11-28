@@ -50,7 +50,7 @@ const StepperComponent = () => {
 
     
     return (
-        <Box gap={2} h={'100dvh'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+        <Box gap={2}  display={'flex'} justifyContent={'center'} alignItems={'center'}>
             <Box gap={2} display={'flex'} flexDirection={'column'} justifyContent={'space-between'} alignItems={'center'} borderRadius={'lg'} w={'auto'} >
                 <Box  m={2} w={'full'} height={['225px', '335px', '390px']}>
                 <motion.div
